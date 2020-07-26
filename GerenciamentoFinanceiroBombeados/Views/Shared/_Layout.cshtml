@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <link rel="stylesheet" href="~/Content/Css/Layout.css" />
+    <link rel="stylesheet" href="~/Content/Css/Global.css" />
+    <link rel="stylesheet" href="~/Content/Css/Home.css" />
+</head>
+<body>
+    <div id="header">
+        <header>
+            <h3>Plin Finance</h3>
+            <nav>
+                <a>@Html.ActionLink("Entradas", "Index", "Entries")</a>
+                <a>@Html.ActionLink("Saídas", "Index", "Outputs")</a>
+            </nav>
+        </header>
+    </div>
+    <div id="content">
+        @RenderBody()
+    </div>
+</body>
+</html>
